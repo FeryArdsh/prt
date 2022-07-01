@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portofolio</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/23f64232fb.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+		<div class="home" id="home">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container navbar-responsive d-flex justify-content-center">
+					<!-- <a href="#"><img src="assets/Group 1.svg" alt="logo" /></a> -->
+					<ul class="navbar-list d-flex justify-content-center">
+						<li class="text-list"><a href="#home">Home</a></li>
+						<li class="text-list"><a href="#skill">Skill</a></li>
+						<li class="text-list"><a href="#contact">Contact</a></li>
+						<li class="icon-nav">
+							<a href="#home"><i class="fa-solid fa-house-chimney"></i></a>
+						</li>
+						<li class="icon-nav">
+							<a href="#skill"><i class="fa-solid fa-address-card"></i></a>
+						</li>
+						<li class="icon-nav">
+							<a href="#contact"><i class="fa-solid fa-brain"></i></a>
+						</li>
+					</ul>
+					<!-- <div class="contact-email text-end">
+						<a href="#"><i class="fa-solid fa-envelope width-icon"></i></a>
+					</div> -->
+				</div>
+			</nav>
+
+			<div
+				class="container text-center about d-flex justify-content-center flex-column align-items-center"
+			>
+				<div class="img-profile">
+					<img class="img-fluid" src="/assets/profile.png" alt="profil" />
+				</div>
+				<span class="about-title">Hello, I'm Fery Ardian Syah</span>
+				<div class="about-description d-flex flex-column mt-3">
+					<span>
+						A junior front-end developer who is passionate about building in
+						javascript( include React JS).
+					</span>
+					<span>
+						I have studied this skill for 2 years and implemented it into a
+						simple project.
+					</span>
+					<span>
+						I love to explore new technologies and always try ti enhance my
+						skills through develop some projects
+					</span>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row mt-2">
+					<div class="col-12 social-media d-flex justify-content-center">
+						<a
+							href="https://github.com/FeryArdsh?tab=repositories"
+							class="github-icon d-flex justify-content-center align-items-center"
+							target="_blank"
+						>
+							<i class="fa-brands fa-github fa-xl"></i>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/fery-ardian-syah-8273091a0/"
+							class="linkedin-icon d-flex justify-content-center align-items-center"
+							target="_blank"
+						>
+							<i class="fa-brands fa-linkedin fa-xl"></i>
+						</a>
+						<a
+							href="mailto:feryardsh123@gmail.com"
+							class="google-icon d-flex justify-content-center align-items-center"
+							target="_blank"
+						>
+							<i class="fa-brands fa-google-plus-square fa-xl"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-12 text-center">
+						<a href="#getintouch" class="btn-resume">contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="skill" class="skill container text-center mt-5">
+			<h3 class="fw-bold">My Skills</h3>
+			<div class="container d-flex justify-content-around flex-wrap">
+				<div
+					class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+					onmouseleave="mouseLeave('id1')"
+				>
+					<div
+						class="list-skill d-flex justify-content-center align-items-center"
+					>
+						<i class="fa-brands fa-html5" style="color: #eb5a36"></i>
+					</div>
+					<button class="btn-card-skill" onclick="myFunction('id1')">
+						<span class="tooltip" id="id1"
+							>- Semantic HTML
+							<br />
+							- Forms and Validations
+							<br />
+							- HTML Media - HTML Style Guide
+						</span>
+						See Detail
+					</button>
+					<p class="position-absolute skill-text">HTML 5</p>
+				</div>
+
+				<div
+					class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+					onmouseleave="mouseLeave('id2')"
+				>
+					<div
+						class="list-skill d-flex justify-content-center align-items-center"
+					>
+						<i class="fa-brands fa-css3-alt fa-5x" style="color: #254bdd"></i>
+					</div>
+					<button class="btn-card-skill" onclick="myFunction('id2')">
+						<span class="tooltip" id="id2"
+							>- Responsive Design <br />
+							and Media Queries
+							<br />
+							- CSS Flex Box
+							<br />
+							- Box Model and Positioning
+							<br />
+							- Basic Animation
+						</span>
+						See Detail
+					</button>
+					<p class="position-absolute skill-text">CSS 3</p>
+				</div>
+
+				<div
+					class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+					onmouseleave="mouseLeave('id3')"
+				>
+					<div
+						class="list-skill d-flex justify-content-center align-items-center"
+					>
+						<i class="fa-brands fa-js fa-5x" style="color: #d3b32c"></i>
+					</div>
+					<button class="btn-card-skill" onclick="myFunction('id3')">
+						<span class="tooltip" id="id3"
+							>- Syntax Basic
+							<br />
+							- Document Object Model
+							<br />
+							- Fetch API
+							<br />
+							- Synchronous and Asynchronous
+							<br />
+							- Javascript ES6
+						</span>
+						See Detail
+					</button>
+					<p class="position-absolute skill-text">Javascript</p>
+				</div>
+
+				<div
+					class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+					onmouseleave="mouseLeave('id4')"
+				>
+					<div
+						class="list-skill d-flex justify-content-center align-items-center"
+					>
+						<i class="fa-brands fa-react fa-5x" style="color: #5ed3f3"></i>
+					</div>
+					<button class="btn-card-skill" onclick="myFunction('id4')">
+						<span class="tooltip" id="id4">
+							- React Hooks (useState, <br />
+							useEffect, useRef)
+							<br />
+							- Props and State
+							<br />
+							- State Management(React Redux)
+							<br />
+							- Fetch API, Apollo(Graphql) <br />
+							and Axios
+							<br />
+							- Basic React Testing
+							<br />
+							- Handle Forms
+						</span>
+						See Detail
+					</button>
+					<p class="position-absolute skill-text">React JS</p>
+				</div>
+
+				<div
+					class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+					onmouseleave="mouseLeave('id5')"
+				>
+					<div
+						class="list-skill d-flex justify-content-center align-items-center"
+					>
+						<i class="fa-brands fa-bootstrap fa-5x" style="color: #7910f2"></i>
+					</div>
+					<button class="btn-card-skill" onclick="myFunction('id5')">
+						<span class="tooltip" id="id5"
+							>- Styling with Gird System
+							<br />
+							- Styling with Flex Box
+							<br />
+							- Styling Forms
+							<br />
+							- Styling with Component in Bootstrap
+						</span>
+						See Detail
+					</button>
+					<p class="position-absolute skill-text">Bootstrap</p>
+				</div>
+
+				<div
+					class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+					onmouseleave="mouseLeave('id6')"
+				>
+					<div
+						class="list-skill d-flex justify-content-center align-items-center"
+					>
+						<i class="fa-brands">
+							<img
+								class="graphql-icon"
+								src="./assets/icon-graphql.svg"
+								alt="graphql"
+						/></i>
+					</div>
+					<button class="btn-card-skill" onclick="myFunction('id6')">
+						<span class="tooltip" id="id6"
+							>- I Use Hasura Platform to Study
+							<br />
+							- Query
+							<br />
+							- Mutation (Insert, <br />
+							Delete, and Update)
+							<br />
+							- Subscription
+						</span>
+						See Detail
+					</button>
+					<p class="position-absolute skill-text">GraphQL</p>
+				</div>
+
+				<div
+					class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+					onmouseleave="mouseLeave('id7')"
+				>
+					<div
+						class="list-skill d-flex justify-content-center align-items-center"
+					>
+						<i class="fa-brands fa-sass fa-5x" style="color: #c76494"></i>
+					</div>
+					<button class="btn-card-skill" onclick="myFunction('id7')">
+						<span class="tooltip" id="id7"
+							>- Variables
+							<br />
+							- Nesting
+							<br />
+							- Modules ( Basic )
+							<br />
+							- Mixins ( Basic )
+						</span>
+						See Detail
+					</button>
+					<p class="position-absolute skill-text">SASS</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project">
+			<div class="container">
+				<div class="text-center pt-3 pb-4">
+					<h3 class="fw-bold">Portfolio</h3>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-lg-6 mb-lg-0 mb-5">
+						<div class="list-project">
+							<div class="img-project">
+								<img class="img-fluid" src="./assets/portfolio1.png" alt="" />
+							</div>
+							<div class="description-project">
+								<p>
+									Website sewa motor, saat ini belum menerapkan sistem
+									responsivenya
+								</p>
+
+								<span class="tag-skill"
+									>HTML CSS ReactJs GraphQL Bootstrap</span
+								>
+								<button class="btn-project mt-2">
+									<a href="https://renbike.netlify.app/" target="_blank"
+										>Live Preview
+									</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="getintouch" class="getintouch pt-5">
+			<div class="container container-getintouch">
+				<div class="row">
+					<div class="col-12 text-center mt-5">
+						<h3 class="fw-bold">Get in Touch</h3>
+					</div>
+				</div>
+
+				<div class="row pt-5">
+					<div class="col-12 container-contact text-center">
+						<p>+6281584981376</p>
+						<a
+							href="https://api.whatsapp.com/send/?phone=081584981376&text&type=phone_number&app_absent=0"
+							class="whatsapp"
+							target="_blank"
+							>Whatsapp Me</a
+						>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 text-center">
+						<h5 class="fw-bold my-4">Send Email</h5>
+					</div>
+					<div class="col-6 position-relative paralax">
+						<span class="paralax-icon phone-icon" data-value="5">
+							<i class="fa-solid fa-phone fa-6x"></i>
+						</span>
+						<span class="paralax-icon paper-icon" data-value="-9">
+							<i class="fa-solid fa-paper-plane fa-7x"></i>
+						</span>
+						<span class="paralax-icon message-icon" data-value="-7">
+							<i class="fa-solid fa-comment fa-5x"></i>
+						</span>
+					</div>
+
+					<div class="col-lg-6 col-12">
+						<form class="contact-form">
+							<div class="position-relative field">
+								<input
+									class="inpt inpt-name position-absolute"
+									type="text"
+									name="name"
+									id="name"
+								/>
+								<label class="labl d-block position-absolute" for="name"
+									>Name</label
+								>
+							</div>
+
+							<div class="position-relative field">
+								<input
+									class="inpt inpt-email position-absolute"
+									type="email"
+									name="email"
+									id="email"
+								/>
+								<label class="labl d-block position-absolute" for="email"
+									>Email</label
+								>
+							</div>
+							<div class="position-relative field">
+								<input
+									class="inpt inpt-subject position-absolute"
+									type="subject"
+									name="subject"
+									id="subject"
+								/>
+								<label class="labl d-block position-absolute" for="subject"
+									>Subject</label
+								>
+							</div>
+
+							<div class="position-relative field">
+								<textarea
+									class="inpt inpt-message position-absolute"
+									name="message"
+									id="message"
+									rows="4"
+								></textarea>
+
+								<label class="labl d-block position-absolute" for="message"
+									>Message</label
+								>
+							</div>
+
+							<div class="position-relative mt-5 btn-send">
+								<button type="submit" class="btn-resume">SUBMIT</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="box"></div>
+		<div class="box2"></div>
+		<div class="footer">All rights reserved 2022 &#169; Fery Ardian Syah</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			document.addEventListener("mousemove", parallax);
+			function parallax(e) {
+				document.querySelectorAll(".paralax-icon").forEach(function (move) {
+					let moving_value = move.getAttribute("data-value");
+					let x = (e.clientX * moving_value) / 250;
+					let y = (e.clientY * moving_value) / 250;
+
+					move.style.transform =
+						"translateX(" + x + "px) translateY(" + y + "px)";
+				});
+			}
+
+			function myFunction(id) {
+				// const tooltipid = document.getElementsByClassName("tooltip");
+				const tooltip = document.getElementById(id);
+
+				if (tooltip.classList.contains("show")) {
+					tooltip.classList.remove("show");
+				} else {
+					tooltip.classList.add("show");
+				}
+			}
+
+			function mouseLeave(id) {
+				const card = document.getElementById(id);
+				if (card.classList.contains("show")) {
+					card.classList.remove("show");
+				}
+			}
+		</script>
+	</body>
+</html>
