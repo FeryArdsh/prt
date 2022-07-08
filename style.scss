@@ -9,6 +9,11 @@ $text-color: #eeeeee !important;
 	box-sizing: border-box;
 	text-decoration: none;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: $primary-color;
 	font-family: "Libre Franklin" !important;
@@ -32,6 +37,38 @@ body {
 		background: #00acb5;
 		filter: blur(80px);
 		z-index: -3;
+	}
+
+	@media only screen and (max-width: 576px) {
+		.box {
+			top: 500px;
+			left: 250px;
+			height: 90px;
+			width: 80px;
+			filter: blur(50px);
+		}
+
+		.box2 {
+			top: 100px;
+			left: -100px;
+		}
+	}
+}
+
+.back-top {
+	position: fixed;
+	z-index: 999;
+	bottom: 12px;
+	right: 12px;
+	display: none;
+	transition: all 2s;
+	a {
+		color: #00adb5;
+	}
+	&:hover {
+		a {
+			color: #00acb59a;
+		}
 	}
 }
 
@@ -133,9 +170,34 @@ body {
 }
 
 .about {
-	// margin-top: 200px;
+	margin-top: 50px;
 	.img-profile {
 		width: 200px;
+		border: 5px solid $secondary-color;
+		border-radius: 0 50px;
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+		animation: float 6s ease-in-out infinite;
+		transition: all 1s;
+
+		&:hover {
+			animation: none;
+			box-shadow: 0 0 30px $secondary-color;
+			border-radius: 50px 0;
+		}
+		@keyframes float {
+			0% {
+				box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+				transform: translatey(0px);
+			}
+			50% {
+				box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+				transform: translatey(-30px);
+			}
+			100% {
+				box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+				transform: translatey(0px);
+			}
+		}
 	}
 	.about-title {
 		font-size: 43px;
@@ -144,6 +206,16 @@ body {
 
 	.about-description {
 		font-size: 16px;
+	}
+
+	@media only screen and (max-width: 576px) {
+		.about-title {
+			font-size: 24px;
+		}
+
+		.about-description {
+			font-size: 14px;
+		}
 	}
 }
 
@@ -243,6 +315,7 @@ body {
 }
 
 .skill {
+	margin-top: 100px;
 	.card-skill {
 		width: 200px;
 		height: 200px;
@@ -452,8 +525,12 @@ body {
 					border-image-slice: 1;
 				}
 
-				&:focus ~ .labl,
-				.input:valid ~ label {
+				&:focus ~ .labl {
+					top: -25px;
+					color: $secondary-color;
+				}
+
+				&:valid ~ .labl {
 					top: -25px;
 					color: $secondary-color;
 				}
@@ -520,7 +597,7 @@ body {
 }
 
 .project {
-	margin: 100px 0;
+	margin: 200px 0;
 	background-image: url("../assets/parallax-img.jpg");
 	height: 600px;
 	background-attachment: fixed;

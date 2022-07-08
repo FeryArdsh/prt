@@ -32,16 +32,16 @@
 					<ul class="navbar-list d-flex justify-content-center">
 						<li class="text-list"><a href="#home">Home</a></li>
 						<li class="text-list"><a href="#skill">Skill</a></li>
-						<li class="text-list"><a href="#contact">Contact</a></li>
-						<li class="icon-nav">
+						<li class="text-list"><a href="#getintouch">Contact</a></li>
+						<!-- <li class="icon-nav">
 							<a href="#home"><i class="fa-solid fa-house-chimney"></i></a>
 						</li>
 						<li class="icon-nav">
 							<a href="#skill"><i class="fa-solid fa-address-card"></i></a>
 						</li>
 						<li class="icon-nav">
-							<a href="#contact"><i class="fa-solid fa-brain"></i></a>
-						</li>
+							<a href="#getintouch"><i class="fa-solid fa-brain"></i></a>
+						</li> -->
 					</ul>
 					<!-- <div class="contact-email text-end">
 						<a href="#"><i class="fa-solid fa-envelope width-icon"></i></a>
@@ -53,18 +53,22 @@
 				class="container text-center about d-flex justify-content-center flex-column align-items-center"
 			>
 				<div class="img-profile">
-					<img class="img-fluid" src="/assets/profile.png" alt="profil" />
+					<img class="img-fluid" src="/assets/foto.png" alt="profil" />
 				</div>
 				<span class="about-title">Hello, I'm Fery Ardian Syah</span>
 				<div class="about-description d-flex flex-column mt-3">
 					<span>
+						I am a student at a national university and am currently in my sixth
+						semester</span
+					>
+					<span>
 						A junior front-end developer who is passionate about building in
 						javascript( include React JS).
 					</span>
-					<span>
+					<!-- <span>
 						I have studied this skill for 2 years and implemented it into a
 						simple project.
-					</span>
+					</span> -->
 					<span>
 						I love to explore new technologies and always try ti enhance my
 						skills through develop some projects
@@ -106,7 +110,7 @@
 			</div>
 		</div>
 
-		<div id="skill" class="skill container text-center mt-5">
+		<div id="skill" class="skill container text-center">
 			<h3 class="fw-bold">My Skills</h3>
 			<div class="container d-flex justify-content-around flex-wrap">
 				<div
@@ -321,11 +325,33 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-lg-6 mb-lg-0 mb-5">
+						<div class="list-project">
+							<div class="img-project">
+								<img class="img-fluid" src="./assets/portfolio2.png" alt="" />
+							</div>
+							<div class="description-project">
+								<p>
+									Website ini dibuat ketika saya mempelajari ReactJS dengan
+									praktikum sederhana
+								</p>
+
+								<span class="tag-skill">HTML CSS ReactJs Bootstrap</span>
+								<button class="btn-project mt-2">
+									<a
+										href="https://latihan-react-fery.netlify.app/"
+										target="_blank"
+										>Live Preview
+									</a>
+								</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="getintouch" class="getintouch pt-5">
+		<div id="getintouch" class="getintouch">
 			<div class="container container-getintouch">
 				<div class="row">
 					<div class="col-12 text-center mt-5">
@@ -361,13 +387,18 @@
 					</div>
 
 					<div class="col-lg-6 col-12">
-						<form class="contact-form">
+						<form
+							class="contact-form"
+							action="https://formsubmit.co/thisfery@gmail.com"
+							method="POST"
+						>
 							<div class="position-relative field">
 								<input
 									class="inpt inpt-name position-absolute"
 									type="text"
 									name="name"
 									id="name"
+									required
 								/>
 								<label class="labl d-block position-absolute" for="name"
 									>Name</label
@@ -380,6 +411,7 @@
 									type="email"
 									name="email"
 									id="email"
+									required
 								/>
 								<label class="labl d-block position-absolute" for="email"
 									>Email</label
@@ -388,9 +420,10 @@
 							<div class="position-relative field">
 								<input
 									class="inpt inpt-subject position-absolute"
-									type="subject"
+									type="text"
 									name="subject"
 									id="subject"
+									required
 								/>
 								<label class="labl d-block position-absolute" for="subject"
 									>Subject</label
@@ -403,6 +436,7 @@
 									name="message"
 									id="message"
 									rows="4"
+									required
 								></textarea>
 
 								<label class="labl d-block position-absolute" for="message"
@@ -419,9 +453,12 @@
 			</div>
 		</div>
 
+		<div class="footer">All rights reserved 2022 &#169; Fery Ardian Syah</div>
 		<div class="box"></div>
 		<div class="box2"></div>
-		<div class="footer">All rights reserved 2022 &#169; Fery Ardian Syah</div>
+		<div class="back-top" id="btnTop">
+			<a href="#home"><i class="fa-solid fa-circle-arrow-up fa-2x"></i></a>
+		</div>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -429,6 +466,24 @@
 			crossorigin="anonymous"
 		></script>
 		<script>
+			//back to top button
+			let btnTop = document.getElementById("btnTop");
+			window.onscroll = function () {
+				scrollFunction();
+			};
+
+			function scrollFunction() {
+				if (
+					document.body.scrollTop > 20 ||
+					document.documentElement.scrollTop > 20
+				) {
+					btnTop.style.display = "block";
+				} else {
+					btnTop.style.display = "none";
+				}
+			}
+
+			//Paralax
 			document.addEventListener("mousemove", parallax);
 			function parallax(e) {
 				document.querySelectorAll(".paralax-icon").forEach(function (move) {
@@ -441,8 +496,8 @@
 				});
 			}
 
+			//tooltip
 			function myFunction(id) {
-				// const tooltipid = document.getElementsByClassName("tooltip");
 				const tooltip = document.getElementById(id);
 
 				if (tooltip.classList.contains("show")) {
@@ -458,6 +513,17 @@
 					card.classList.remove("show");
 				}
 			}
+
+			//Smoth Scroll
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute("href")).scrollIntoView({
+						behavior: "smooth",
+					});
+				});
+			});
 		</script>
 	</body>
 </html>
