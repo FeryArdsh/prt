@@ -25,21 +25,20 @@
     </head>
 
     <body>
+        <nav class="navbar navbar-expand-lg">
+            <div
+                class="container navbar-responsive d-flex justify-content-center"
+            >
+                <ul class="navbar-list d-flex justify-content-center">
+                    <li class="text-list"><a href="#home">Home</a></li>
+                    <li class="text-list"><a href="#skill">Skill</a></li>
+                    <li class="text-list">
+                        <a href="#getintouch">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="home" id="home">
-            <nav class="navbar navbar-expand-lg">
-                <div
-                    class="container navbar-responsive d-flex justify-content-center"
-                >
-                    <ul class="navbar-list d-flex justify-content-center">
-                        <li class="text-list"><a href="#home">Home</a></li>
-                        <li class="text-list"><a href="#skill">Skill</a></li>
-                        <li class="text-list">
-                            <a href="#getintouch">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
             <div
                 class="container text-center about d-flex justify-content-center flex-column align-items-center"
             >
@@ -188,6 +187,8 @@
                             - Synchronous and Asynchronous
                             <br />
                             - Javascript ES6
+                            <br />
+                            - Typescript
                         </span>
                         See Detail
                     </button>
@@ -208,19 +209,16 @@
                     </div>
                     <button class="btn-card-skill" onclick="myFunction('id4')">
                         <span class="tooltip" id="id4">
-                            - React Hooks (useState, <br />
-                            useEffect, useRef)
+                            - React Hooks
                             <br />
-                            - Props and State
+                            - State Management(React Redux, <br />
+                            and Zustand)
                             <br />
-                            - State Management(React Redux)
-                            <br />
-                            - Fetch API, Apollo(Graphql) <br />
-                            and Axios
+                            - Fetch API
                             <br />
                             - Basic React Testing
                             <br />
-                            - Handle Forms
+                            - NextJS Framework
                         </span>
                         See Detail
                     </button>
@@ -252,6 +250,30 @@
                         See Detail
                     </button>
                     <p class="position-absolute skill-text">Bootstrap</p>
+                </div>
+
+                <div
+                    class="card-skill d-flex flex-column align-items-center position-relative my-4 mx-lg-5"
+                    onmouseleave="mouseLeave('id8')"
+                >
+                    <div
+                        class="list-skill d-flex justify-content-center align-items-center"
+                    >
+                        <img src="./assets/tailwind.png" width="60%" alt="" />
+                    </div>
+                    <button class="btn-card-skill" onclick="myFunction('id8')">
+                        <span class="tooltip" id="id8"
+                            >- Styling with Gird System
+                            <br />
+                            - Styling with Flex Box
+                            <br />
+                            - Styling Forms
+                            <br />
+                            - Responsive styles
+                        </span>
+                        See Detail
+                    </button>
+                    <p class="position-absolute skill-text">Tailwind</p>
                 </div>
 
                 <div
@@ -313,7 +335,36 @@
                     <h3 class="fw-bold">Portfolio</h3>
                 </div>
 
-                <div class="row mt-5">
+                <div class="row mt-2 flex justify-content-center">
+                    <div class="col-lg-6 mb-lg-0 mb-5">
+                        <div class="list-project">
+                            <div class="img-project">
+                                <img
+                                    class="img-fluid"
+                                    src="./assets/coursein.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="description-project">
+                                <p>
+                                    A full-stack online course marketplace
+                                    website.
+                                </p>
+
+                                <span class="tag-skill"
+                                    >HTML CSS ReactJs NodeJS ExpressJS
+                                    MongoDB</span
+                                >
+                                <button class="btn-project mt-2">
+                                    <a
+                                        href="https://coursein.netlify.app/"
+                                        target="_blank"
+                                        >Live Preview
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6 mb-lg-0 mb-5">
                         <div class="list-project">
                             <div class="img-project">
@@ -325,9 +376,9 @@
                             </div>
                             <div class="description-project">
                                 <p>
-                                    Website penukaran rewerd (point), ketika
-                                    pengguna berbelanja di toko yang tersedia di
-                                    website
+                                    Rewards exchange website exchanges points
+                                    when users shop at the available stores on
+                                    the website.
                                 </p>
 
                                 <span class="tag-skill"
@@ -343,7 +394,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 mb-lg-0 mb-5">
+                    <div class="col-lg-6 mb-lg-0 mb-5 mt-lg-4">
                         <div class="list-project">
                             <div class="img-project">
                                 <img
@@ -354,8 +405,8 @@
                             </div>
                             <div class="description-project">
                                 <p>
-                                    Website company profil yang bergerak di
-                                    bidang ekspor bahan kelapa
+                                    Website company profile that specializes in
+                                    exporting coconut-based products.
                                 </p>
 
                                 <span class="tag-skill"
