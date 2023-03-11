@@ -432,6 +432,10 @@ body {
                     }
                 }
 
+                .skill-text {
+                    opacity: 0;
+                }
+
                 .btn-card-skill {
                     opacity: 1;
                     width: auto;
@@ -569,6 +573,22 @@ body {
         }
 
         @media only screen and (max-width: 576px) {
+            & {
+                border-radius: 0;
+            }
+            .paralax {
+                display: none;
+            }
+
+            .field {
+                width: 100%;
+            }
+
+            .btn-send {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 992px) {
             & {
                 border-radius: 0;
             }

@@ -392,6 +392,9 @@ body .box2 {
   .skill .card-skill .list-skill .fa-brands .graphql-icon {
     width: 50px;
   }
+  .skill .card-skill .skill-text {
+    opacity: 0;
+  }
   .skill .card-skill .btn-card-skill {
     opacity: 1;
     width: auto;
@@ -512,6 +515,20 @@ body .box2 {
   opacity: var(--fa-secondary-opacity, 1);
 }
 @media only screen and (max-width: 576px) {
+  .getintouch .container-getintouch {
+    border-radius: 0;
+  }
+  .getintouch .container-getintouch .paralax {
+    display: none;
+  }
+  .getintouch .container-getintouch .field {
+    width: 100%;
+  }
+  .getintouch .container-getintouch .btn-send {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
   .getintouch .container-getintouch {
     border-radius: 0;
   }
